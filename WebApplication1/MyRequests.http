@@ -1,0 +1,18 @@
+
+GET http://localhost:5093/api/todos
+###
+POST http://localhost:5093/api/todos
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title": "Buy eggs",
+    "dueDate": "2024-11-07",
+    "completed": false
+}
+###
+DELETE http://localhost:5093/api/todos/1
+###
+GET http://localhost:5093/api/todos/2
+###
+GET http://localhost:5093/api/tasks/1
